@@ -152,6 +152,10 @@ header ul li a:hover {
   font-size: 20px;
 }
 
+.content-text strong {
+  color: #1c732d;
+}
+
 .content-text h3 {
   font-size: 30px;
   margin-bottom: 10px;
@@ -168,6 +172,7 @@ img {
 .tech-stack {
   background: #ffffff;
   padding: 100px 0;
+  height: 90vh;
 }
 
 .tech-stack .content {
@@ -187,7 +192,7 @@ img {
 }
 
 .tech-stack .content .tech-stackBx img {
-  width: 230px;
+  width: 90px;
 }
 
 .projects {
@@ -204,8 +209,12 @@ img {
   width: 45%;
   padding: 20px;
   margin: 10px;
-  border: 2px solid #1c732d;
+  border: 3px solid #1c732d;
   text-align: center;
+}
+
+.projects .content .projectsBx h2 {
+  color: #1c732d;
 }
 
 .projects .content .projectsBx img {
@@ -447,14 +456,27 @@ img {
     padding: 45px 0;
   }
 
+  .tech-stack .content .tech-stackBx h2 {
+    font-size: 10px;
+  }
+
   .tech-stack .content .tech-stackBx img {
-    width: 150px;
+    width: 50px;
+  }
+
+  .tech-stack .content .tech-stackBx {
+    padding: 30px 20px;
   }
 
   .projects .content .projectsBx {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 30px;
+    font-size: 12px;
+  }
+
+  .projects .content .projectsBx img {
+    height: 300px;
   }
 
   .projectsBx {
@@ -466,6 +488,7 @@ img {
     width: 150px;
     height: 40px;
     font-size: 14px;
+    margin: 3px;
   }
 
   .contactInfo h3 {
@@ -491,7 +514,7 @@ img {
   }
 
   .box img {
-    width: 50px;
+    width: 70px;
   }
 
   .box h3 {
