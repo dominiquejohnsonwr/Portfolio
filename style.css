@@ -1,0 +1,516 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.home-banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(https://wallpapercave.com/wp/wp7573530.jpg);
+  color: white;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-banner h2 {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.home-banner h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1c732d;
+}
+
+.home-banner h3 {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.button {
+  position: relative;
+  background: #1c732d;
+  display: inline-block;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.profile-pic {
+  max-height: 80vh;
+  padding: 40px 100px;
+  border-radius: 5px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: #ffffff;
+  padding: 40px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+  color: #111111;
+}
+
+.textBx {
+  padding: 40px 100px;
+}
+
+header .logo {
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: large;
+  font-weight: 800;
+}
+
+header.sticky ul li a {
+  color: #111111;
+}
+
+header ul li a:hover {
+  color: #1c732d;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+  color: #111111;
+}
+
+.about {
+  padding: 100px 0;
+}
+
+.heading h2 {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+
+.content-text {
+  padding-right: 50px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.content-text h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.w50 {
+  min-width: 50%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tech-stack {
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.tech-stack .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.tech-stack .content .tech-stackBx {
+  padding: 40px 20px;
+  color: #111111;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.tech-stack .content .tech-stackBx img {
+  width: 230px;
+}
+
+.projects {
+  padding: 100px 0 0 0;
+}
+
+.projects .content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects .content .projectsBx {
+  width: 45%;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid #1c732d;
+  text-align: center;
+}
+
+.projects .content .projectsBx img {
+  height: 500px;
+}
+
+.project-btn {
+  height: 45px;
+  width: 170px;
+  font-size: 24px;
+  margin: 25px 10px;
+  border: 3px solid #1c732d;
+  border-radius: 7px;
+}
+
+.project-btn:hover {
+  background: #1c732d;
+  color: #ffffff;
+}
+
+.contact {
+  min-height: 85vh;
+}
+
+.formBx {
+  min-width: 60%;
+}
+
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.formBx form input,
+.formBx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid black;
+  resize: none;
+}
+
+.formBx form textarea {
+  min-height: 200px;
+}
+
+.formBx form input::placeholder,
+.formBx form textarea::placeholder {
+  color: black;
+}
+
+.formBx form input[type="submit"] {
+  max-width: 100px;
+  background: #1c732d;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contactInfo {
+  min-width: 40%;
+}
+
+.contactInfoBx {
+  position: relative;
+}
+
+.contactInfoBx .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contactInfoBx .box .icon {
+  min-width: 40px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.contactInfoBx .box .text {
+  display: flex;
+  margin-left: 2px;
+  font-size: 16px;
+  flex-direction: row;
+  font-weight: 300;
+}
+
+.contactInfoBx .box .text h3 {
+  font-weight: 500;
+  color: #1c732d;
+  margin-bottom: 0;
+  align-items: center;
+  font-size: 13px;
+}
+
+.text h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+
+  .menu {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    background: #ffffff;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  header ul li a {
+    color: #111111;
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url(./portfolio-images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  .toggle.active {
+    background: url(./portfolio-images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+
+  header.sticky .toggle {
+    filter: invert(1);
+  }
+
+  section {
+    padding: 100px 50px;
+  }
+
+  .home-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 100%;
+  }
+
+  .banner {
+    padding: 150px 50px 100px;
+  }
+
+  .banner h2 {
+    font-size: 1.5em;
+  }
+
+  .banner h3 {
+    font-size: 1em;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .contentBx h3 {
+    font-size: 20px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .content-text {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .content-text h3,
+  .content-text p {
+    font-size: 16px;
+  }
+
+  .w50 {
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .journey-img {
+    display: none;
+  }
+
+  .about,
+  .tech-stack,
+  .projects,
+  .contact {
+    padding: 45px 0;
+  }
+
+  .tech-stack .content .tech-stackBx img {
+    width: 150px;
+  }
+
+  .projects .content .projectsBx {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .project-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .contactInfo h3 {
+    margin-left: 20px;
+  }
+
+  .box h3 {
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form h3 {
+    margin: 0 0 10px 20px;
+  }
+
+  .tech-stackBx img {
+    width: 55px;
+  }
+
+  .box img {
+    width: 50px;
+  }
+
+  .box h3 {
+    font-size: 12px;
+  }
+
+  .textBx,
+  .home-banner {
+    padding: 40px 7px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  header,
+  header.sticky {
+    padding: 20px 20px;
+  }
+
+  .textBx,
+  .home-banner {
+    padding: 40px 7px;
+  }
+
+  .box h3 {
+    font-size: 12px;
+  }
+
+  .box img {
+    width: 50px;
+  }
+
+  .tech-stackBx img {
+    width: 55px;
+  }
+} */

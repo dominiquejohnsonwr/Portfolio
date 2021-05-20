@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
+  <title>DJ Portfolio</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">DJ Portfolio</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Tech Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  
+  <section class="home-banner" id="home">
+    <div class="textBx">
+      <h2>Hello, <br><span>I'm Dominique Johnson.</span></h2>
+      <h3>I'm a Full-Stack Web Developer</h3>
+      <a href="#about" class="button">About Me</a>
+    </div>
+    <img src="./portfolio-images/Profile Pic.jpg" class="profile-pic" />
+  </section>
+  
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="content-text">
+        <h3>I'm a Full Stack Developer </h3>
+        <p>who combines a passion for technology with problem solving to provide the best possible solutions to my clients. I come from an athletic background having played football up through the professional level in the National Football League. That experience taught me the value of setting big goals, some might find unrealistic, and working hard to achieve them. I've taken that mindset and applied it to all walks of my life since then. In my most recent position as a district sales manager at ADP, I was responsible for driving the sales process from prospecting for new clients to implementation of our payroll technology software. My interest in software development was driven by my curiosity in helping people better understand our product by increasing my understanding of what was happening under the hood.<br><br> That curiosity led me to enrolling in and completing General Assembly's Software Engineering Immersive program. The program included over 420 hours of professional training over 12 weeks. Throughout the 12 weeks I was able to take a hands-on approach to learn and build ful-stack applications that showcased full CRUD functionality throughout. </p>
+      </div>
+  
+      <div class="w50">
+        <img src="https://previews.123rf.com/images/delcreations/delcreations1510/delcreations151000118/47377642-feet-and-two-arrows-painted-on-an-asphalt-road.jpg" class="journey-img" />
+      </div>
+    </div>
+  </section>
+  
+  <section class="tech-stack" id="stack">
+    <div class="heading white">
+      <h2>Tech Stack</h2>
+    </div>
+    <div class="content">
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/PNGIX.com_javascript-logo-png_1506301.png" height="220px" />
+        <h2>JavaScript</h2>
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/HTML5.png" height="220px" />
+        <!-- <h2>HTML5</h2> -->
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/pngaaa.com-4178954.png" height="220px" />
+        <!-- <h2>CSS</h2> -->
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/Daco_221315.png" height="220px" />
+        <h2>React</h2>
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/ExpressJS-logo.png" width="370px" />
+        <!-- <h2>Express.js</h2> -->
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/kisspng-microsoft-sql-server-mysql-database-logo-5b098c6ee92a46.0488681015273524309551.png" height="200px" />
+        <!-- <h2>SQL</h2> -->
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/pngwing.com.png" height="220px" />
+        <!-- <h2>JavaScript</h2> -->
+      </div>
+      <div class="tech-stackBx">
+        <img src="./portfolio-images/pngaaa.com-4122154.png" height="220px" />
+        <h2>Ruby on Rails</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="heading white">
+      <h2>My Projects</h2>
+    </div>
+    <div class="content">
+      <div class="projectsBx">
+        <img src="./portfolio-images/Culture Crafts Screenshot.png" />
+        <h2>Culture Crafts</h2>
+        <p>CultureCrafts is an online e-commerce website where you can showcase your own and/or view others customized and personalized crafty creations. App features full CRUD functionality and my plan is to continue building more features soon.</p>
+        <a href="https://cocky-wozniak-069665.netlify.app/"><button class="project-btn">Deployed Site</button></a>
+        <a href="https://github.com/dominiquejohnsonwr/CultureCrafts"><button class="project-btn">GitHub Repo</button></a>
+      </div>
+      <div class="projectsBx">
+        <img src="./portfolio-images/DevOcean Screenshot.png" />
+        <h2>DevOcean</h2>
+        <p>DevOcean is a full-featured community based messaging application where users can manage their profile and start conversations with other users. </p>
+        <a href="https://devocean-app.netlify.app/"><button class="project-btn">Deployed Site</button></a>
+        <a href="https://github.com/luongt13/devOcean-message"><button class="project-btn">GitHub Repo</button></a>
+      </div>
+      <div class="projectsBx">
+        <img src="./portfolio-images/FollowMe Screenshot.png" />
+        <h2>FollowMe</h2>
+        <p>FollowMe is a social media app where you can share your ideas, thoughts, feelings etc. with those who choose to follow your account. It's an easy way to stay connected with other people anywhere in the world. I plan to implement full user authentication and continue adding features over time.</p>
+        <a href="https://unruffled-dijkstra-b2a0d2.netlify.app"><button class="project-btn">Deployed Site</button></a>
+        <a href="https://github.com/dominiquejohnsonwr/Follow-Me"><button class="project-btn">GitHub Repo</button></a>
+      </div>
+      <div class="projectsBx">
+        <img src="./portfolio-images/Marvel Screenshot.png" />
+        <h2>Marvel Comic Lookup</h2>
+        <p>Marvel Comic Lookup is an application that allows you to search and view comics for any super-hero from the Marvel Comics Universe using the official Marvel Comics API.</p>
+        <a href="http://marvel-comics-lookup.surge.sh/"><button class="project-btn">Deployed Site</button></a>
+        <a href="https://github.com/dominiquejohnsonwr/Marvel-Search-Engine"><button class="project-btn">GitHub Repo</button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="heading">
+      <h2>Contact Me! I'm currently looking for new work opportunities.</h2>
+    </div>
+    <div class="content">
+      <div class="contactInfo">
+        <h3>Contact Info</h3>
+        <div class="contactInfoBx">
+          <div class="box">
+            <div class="icon"></div>
+            <div class="text">
+              <a href="mailto:codeblooded.dj@gmail.com"><img src="https://i.pinimg.com/originals/bb/18/bd/bb18bdbbef437b2d50518db5a8292c94.png" width="70px" /></a> 
+              <h3>codeblooded.dj@gmail.com</h3>
+            </div>
+          </div>
+        <div class="box">
+          <div class="icon"></div>
+            <div class="text">
+              <a href="https://www.linkedin.com/in/dominique-johnson-0304/" target="_blank"><img src="./portfolio-images/iconmonstr-linkedin-3.png" height="70px"/> </a>
+              <h3>View my LinkedIn profile</h3>
+            </div>
+        </div>
+        <div class="box">
+          <div class="icon"></div>
+            <div class="text">
+              <a href="https://github.com/dominiquejohnsonwr" target="_blank"><img src="./portfolio-images/github-169-1174970.png" height="70px"/> </a>
+              <h3>View my GitHub</h3>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="contact-img">
+        <img src="./portfolio-images//macstation.jpeg" />
+      </div>
+      <!-- <div class="formBx">
+        <form>
+          <h3>Message Me</h3>
+          <input type="text" name="" placeholder="Full Name">
+          <input type="email" name="" placeholder="Email">
+          <textarea placeholder="Your Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div> -->
+    </div>
+  </section>
+  
+  <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+      let header = document.querySelector('header')
+      header.classList.toggle('sticky', window.scrollY > 0)
+    })
+
+    function toggleMenu(){
+      let menuToggle = document.querySelector('.toggle')
+      let menu = document.querySelector('.menu')
+      menuToggle.classList.toggle('active')
+      menu.classList.toggle('active')
+    }
+  </script>
+</body>
+</html>
